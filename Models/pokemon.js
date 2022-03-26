@@ -1,8 +1,7 @@
 // Import mongoose
 import mongoose from 'mongoose';
 
-const { Schema } = mongoose; 
-const PokemonSchema = Schema({
+const PokemonSchema = new mongoose.Schema({
   url_image: String,
   type: Array,
   id: Number,
